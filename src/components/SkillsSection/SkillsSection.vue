@@ -2,9 +2,20 @@
   <div class="skills-section">
     <Title class="skills-title" title="skills"></Title>
     <h4 class="skills-type">Hard skills</h4>
-    <ul>
+    <ul class="skills-list">
       <li v-for="skillItem in hardSkillsArray"
-          :key="skillItem.id"><img :src="require(`../../assets/skillsIcons/${skillItem.img}`)"/>{{skillItem.label}}</li>
+          :key="skillItem.id" class="skills-item">
+        <img class="skills-img" :src="require(`../../assets/skillsIcons/${skillItem.img}`)"/>
+        {{skillItem.label}}
+      </li>
+    </ul>
+    <h4 class="skills-type">Experienced with:</h4>
+    <ul class="skills-list">
+      <li v-for="skillItem in experienced"
+          :key="skillItem.id" class="skills-item">
+        <img class="skills-img" :src="require(`../../assets/skillsIcons/${skillItem.img}`)"/>
+        {{skillItem.label}}
+      </li>
     </ul>
   </div>
 </template>
@@ -71,6 +82,28 @@ export default {
           img: "gulp.png",
         },
       ],
+      experienced: [
+        {
+          label: "TypeScript",
+          id: "typeScript",
+          img: "typescript.png",
+        },
+        {
+          label: "NodeJS (Express)",
+          id: "nodeJS",
+          img: "expressjs-icon.svg",
+        },
+        {
+          label: "MongoDB",
+          id: "mongoDB",
+          img: "mongoDB.jpg",
+        },
+       {
+          label: "Git",
+          id: "mongoDB",
+          img: "git.png",
+        },
+      ]
     };
   },
 }

@@ -23,7 +23,7 @@
             :strength="0">
           <div class="photo-scale-box">
             <div class="photo image-part"></div>
-            <div class="brovka image-part"></div>
+            <div :class="eyebrowClasses"></div>
           </div>
         </kinesis-element>
         <img class="parallax-element pink-line" src="../../assets/line1.png">
@@ -146,6 +146,7 @@ const isMobile = computed(() => {
 
 let isMounted = ref(false)
 let isParallaxActive = ref(false)
+let isEyebrowAnimActive = ref(false)
 const parallaxClasses = computed(() => {
   const classes = ['parallax-wrapper']
 
@@ -160,19 +161,49 @@ const parallaxClasses = computed(() => {
   return classes
 })
 
+const eyebrowClasses = computed(() => {
+  const classes = ['eyebrow image-part']
+
+  if (isEyebrowAnimActive.value) {
+    classes.push('init')
+  }
+
+
+  return classes
+})
+
+
+
 
 function toggleParallax() {
   isParallaxActive.value = !isParallaxActive.value
 }
 
+const handleMouseMove = () => {
+  isEyebrowAnimActive.value = true;
+
+  setTimeout(() => {
+    isEyebrowAnimActive.value = false;
+  }, 600);
+}
 
 onMounted(() => {
   isMounted.value = true
 
   setTimeout(() => {
+    isEyebrowAnimActive.value = true;
+
+    setTimeout(() => {
+      isEyebrowAnimActive.value = false;
+    }, 600);
+
+  }, 1500);
+
+  setTimeout(() => {
     isParallaxActive.value = true
   }, 2000)
 
+  window.addEventListener('mousemove', handleMouseMove);
 
 })
 </script>
