@@ -21,7 +21,10 @@
         <kinesis-element
             class="parallax-element photo-container"
             :strength="0">
-          <img class="photo" src="../../assets/photo.png">
+          <div class="photo-scale-box">
+            <div class="photo image-part"></div>
+            <div class="brovka image-part"></div>
+          </div>
         </kinesis-element>
         <img class="parallax-element pink-line" src="../../assets/line1.png">
       </div>
