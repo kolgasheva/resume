@@ -1,0 +1,20 @@
+.title {
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 30px;
+  color: #305585;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.title--pink {
+  color: #FAA79D;
+}
+
+@media (min-width: 992px) {
+  .title {
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 68px;
+  }
+}

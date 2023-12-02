@@ -1,0 +1,37 @@
+.about-section__container {
+  width: 90%;
+  position: relative;
+  margin-top: 30px;
+  min-width: 370px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.about-section__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #1D1B1B;
+  margin-top: 5px;
+}
+
+@media (min-width: 768px) {
+  .about-section__container {
+    width: 49%;
+    margin-left: 0;
+    margin-right: 0;
+    left: 51%;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-section__container {
+    margin-top: 77px;
+  }
+  .about-section__text {
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 5px;
+  }
+}
