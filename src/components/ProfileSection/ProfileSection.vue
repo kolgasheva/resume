@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="header-wrapper">
     <kinesis-container
         :active="isParallaxActive"
         :class="parallaxClasses"

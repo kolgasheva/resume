@@ -6,7 +6,7 @@
       <li v-for="skillItem in hardSkillsArray"
           :key="skillItem.id" class="skills-item">
         <img class="skills-img" :src="require(`../../assets/skillsIcons/${skillItem.img}`)"/>
-        {{skillItem.label}}
+       <span class="skills-text"> {{skillItem.label}}</span>
       </li>
     </ul>
     <h4 class="skills-type">Experienced with:</h4>
@@ -14,7 +14,14 @@
       <li v-for="skillItem in experienced"
           :key="skillItem.id" class="skills-item">
         <img class="skills-img" :src="require(`../../assets/skillsIcons/${skillItem.img}`)"/>
-        {{skillItem.label}}
+        <span class="skills-text"> {{skillItem.label}}</span>
+      </li>
+    </ul>
+    <ul class="skills-list">
+      <h4 class="skills-type">Soft-skills:</h4>
+      <li v-for="(skillItem, index) in softSkills"
+          :key="index" class="skills-item">
+        <span class="skills-text"> {{skillItem.label}}</span>
       </li>
     </ul>
   </div>
@@ -102,6 +109,23 @@ export default {
           label: "Git",
           id: "mongoDB",
           img: "git.png",
+        },
+      ],
+      softSkills: [
+        {
+          label: "Self-study",
+        },
+        {
+          label: "Analytical thinking",
+        },
+        {
+          label: "Teamwork",
+        },
+        {
+          label: "Soberly assess criticism",
+        },
+        {
+          label: "Responsibility and result orientation",
         },
       ]
     };

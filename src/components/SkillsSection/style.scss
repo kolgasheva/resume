@@ -2,27 +2,44 @@
   width: 90%;
   position: relative;
   margin-top: 30px;
-  min-width: 370px;
+  min-width: 333px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .skills-type {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-  color:  #305585;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 32px;
+  color:  #575757;
   margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 .skills-list {
   margin-top: 15px;
 }
 .skills-item {
-  margin-bottom: 10px;
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  position: relative;
 }
 .skills-img {
   width: 30px;
   height: 30px;
   margin-right: 20px;
+}
+
+.skills-text {
+  display: inline-block;
+  position: relative;
+  bottom: 7px;
+}
+
+@media (min-width: 768px) {
+  .skills-section {
+    position: relative;
+  }
 }

@@ -3,4 +3,11 @@
   max-width: 1440px;
   margin: 0 auto;
   overflow-x: hidden;
+  width: 100vw;
+}
+
+@media (min-width: 768px) {
+  .main-section {
+    position: relative;
+  }
 }
