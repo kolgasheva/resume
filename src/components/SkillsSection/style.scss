@@ -16,9 +16,6 @@
   margin-bottom: 15px;
 }
 
-.skills-list {
-  margin-top: 15px;
-}
 .skills-item {
   margin-top: 10px;
   font-weight: 500;
@@ -40,6 +37,37 @@
 
 @media (min-width: 768px) {
   .skills-section {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    grid-column: 1/1;
+    grid-row: 1;
+  }
+}
+
+@media (min-width: 993px) {
+  .skills-section {
+    margin-top: 65px;
+  }
+  .skills-type {
+    font-size: 32px;
+    line-height: 44px;
+    margin-top: 35px;
+    margin-bottom: 25px;
+  }
+
+  .skills-item {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .skills-img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .skills-text {
+    display: inline-block;
     position: relative;
+    bottom: 7px;
   }
 }

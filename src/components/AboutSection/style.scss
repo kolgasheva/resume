@@ -18,16 +18,16 @@
 
 @media (min-width: 768px) {
   .about-section__container {
-    width: 49%;
+    width: 100%;
     margin-left: 0;
     margin-right: 0;
-    left: 51%;
+    grid-column: 2/2;
   }
 }
 
 @media (min-width: 992px) {
   .about-section__container {
-    margin-top: 77px;
+    margin-top: 65px;
   }
   .about-section__text {
     font-size: 18px;

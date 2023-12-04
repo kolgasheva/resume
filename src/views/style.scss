@@ -5,9 +5,17 @@
   overflow-x: hidden;
   width: 100vw;
 }
+.grid-container {
+  width: 100%;
+}
 
 @media (min-width: 768px) {
-  .main-section {
-    position: relative;
+  .grid-container {
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, minmax(333px, 1fr));
+    grid-auto-rows: minmax(100px, auto);
   }
 }

@@ -1,0 +1,39 @@
+.languages-section {
+  margin-top: 30px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.languages-item {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  position: relative;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .languages-section {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    grid-column: 1/1;
+    grid-row: 2;
+  }
+}
+
+@media (min-width: 992px) {
+  .languages-section {
+    margin-top: 35px;
+  }
+  .languages-item {
+    margin-top: 35px;
+  }
+
+  .skills-item {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
