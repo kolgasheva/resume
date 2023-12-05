@@ -1,0 +1,55 @@
+.education-section__container {
+  margin-top: 30px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.education-section--item {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 50px
+}
+.education-section__text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #6A6A6A;
+}
+
+.education-section__text--pink {
+  color: #F18181;
+}
+
+.education-section__link {
+  text-decoration: none;
+  color: #1673FF;
+  display: block;
+  margin-top: 20px;
+}
+
+
+@media (min-width: 768px) {
+  .education-section__container {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    grid-column: 1/1;
+    grid-row: 4;
+  }
+}
+
+@media (min-width: 992px) {
+  .education-section__container {
+    margin-top: 35px;
+  }
+
+  .education-section--item {
+    margin-top: 35px;
+  }
+
+  .education-section__text {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
