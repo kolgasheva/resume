@@ -1,0 +1,72 @@
+.experience-section__container {
+  margin-top: 30px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.experience-item__title {
+  font-width: 800;
+  font-size: 30px;
+  line-height: 41px;
+  color: #9DCAA9;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.experience-item__time-interval {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  color: #1673FF;
+  margin-bottom: 15px;
+}
+
+.task-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #1D1B1B;
+  margin-bottom: 10px;
+}
+
+
+@media (min-width: 768px) {
+  .experience-section__container {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    grid-column: 2/2;
+    grid-row: 7;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .experience-item__title {
+    font-width: 800;
+    font-size: 30px;
+    line-height: 41px;
+    color: #9DCAA9;
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
+
+  .experience-item__title {
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 25px;
+  }
+
+  .experience-item__time-interval {
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  .task-item {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 15px;
+  }
+
+}

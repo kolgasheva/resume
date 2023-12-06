@@ -60,7 +60,7 @@
           <a class="print-link--base-link project-item__link" href="http://chartae.morelleth.com/" target="_blank">link to game</a>
         </div>
         <div class="print-link">
-          <a class="print-link--base-link project-item__link" href="https://gitlab.com/alyona4/chartae" target="_blank">link to gitlab</a>
+          <a class="print-link--base-link project-item__link" href="https://github.com/kolgasheva/chartae" target="_blank">link to github</a>
         </div>
       </div>
     </div>
@@ -80,8 +80,8 @@
         implementation of our project.
       </p>
       <div class="project-item__link-container">
-        <a class="project-item__link" href="https://shop-avion.onrender.com/">link to game</a>
-        <a class="project-item__link" href="https://github.com/DoroshenkoDan/Store-Avion">link to github</a>
+        <a class="project-item__link" href="https://shop-avion.onrender.com/" target="_blank">link to game</a>
+        <a class="project-item__link" href="https://github.com/DoroshenkoDan/Store-Avion" target="_blank">link to github</a>
       </div>
     </div>
   </kinesis-container>
