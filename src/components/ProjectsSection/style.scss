@@ -40,7 +40,7 @@
   left: 5%;
 }
 
-.project-item__img--green-circle {
+.project-item__img-container--green-circle {
   width: 27%;
   position: absolute;
   z-index: -1;
@@ -49,8 +49,15 @@
   top: 0;
   left: 0;
 }
+.project-item__img--green-circle{
+  width: 100%;
+}
 
-.project-item__img--stars {
+.project-item__img--stars{
+  width: 100%;
+}
+
+.project-item__img-container--stars {
   width: 49%;
   position: absolute;
   z-index: 1;
@@ -83,6 +90,9 @@
     margin-right: 0;
     grid-column: 2/2;
     grid-row: 2/8;
+  }
+  .project-item__img {
+    left: 10%;
   }
 }
 

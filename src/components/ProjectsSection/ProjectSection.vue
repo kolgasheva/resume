@@ -27,11 +27,23 @@
         Tiles and some Tiles have 'bridge' that split Tile and block ability to connect
         top part with bottom. Looks like this:
       </p>
-      <div class="project-item__img-container">
+      <kinesis-container class="project-item__img-container">
         <img class="project-item__img" src="../../assets/projectSectionImg/ellipse20.png"/>
+        <kinesis-element
+            class="project-item__img-container--green-circle"
+            :strength="10"
+            originX="20"
+        >
         <img class="project-item__img--green-circle" src="../../assets/projectSectionImg/ellipse19.png"/>
+        </kinesis-element>
+        <kinesis-element
+            class="project-item__img-container--stars"
+            :strength="10"
+            type="depth"
+        >
         <img class="project-item__img--stars" src="../../assets/stars.png"/>
-      </div>
+        </kinesis-element>
+      </kinesis-container>
       <p class="projects-item__text">
         Connection logic was in abstract split Tile on 8 parts, 2 on each side. We
         determine what type on each part. Than we build graphs between them and

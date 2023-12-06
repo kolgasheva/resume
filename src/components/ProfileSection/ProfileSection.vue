@@ -7,7 +7,8 @@
       <div class="profile-container">
         <kinesis-element
             class="parallax-element img-container__blue-part"
-            :strength="5"
+            :strength="10"
+            type="depth"
         >
           <img class="img__blue-part" src="../../assets/blue_part.png">
         </kinesis-element>
@@ -60,7 +61,8 @@
       </kinesis-element>
       <kinesis-element
           class="parallax-element img-container__points"
-          :strength="5">
+          :strength="5"
+          type="depth">
         <svg class="svg-points" height="182" viewBox="0 0 72 182" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
               d="M71.5366 270.998L44.5566 262.34L44.4535 234.005L27.882 256.989L0.902018 248.331L17.6403 271.194L1.06872 294.178L27.985 285.324L44.7233 308.187L44.6202 279.852L71.5366 270.998Z"
@@ -127,6 +129,7 @@
       <kinesis-element
           class="parallax-element img-container__stars"
           :strength="5"
+          type="depth"
       >
         <img class="img-element" src="../../assets/stars.png">
       </kinesis-element>
