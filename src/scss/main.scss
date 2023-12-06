@@ -27,15 +27,4 @@ html, body {
     height: auto;
     margin-top: 20px;
   }
-
-  @include media('print') {
-    .print-box {
-      display: block;
-      margin-top: 10px;
-    }
-
-    .print-link--base-link {
-      display: none;
-    }
-  }
 }

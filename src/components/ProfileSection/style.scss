@@ -216,6 +216,9 @@
   color: #00009c;
 }
 
+.contacts-item__in {
+  height: 32px;
+}
 
 
 .contacts-icon__in {
@@ -264,6 +267,22 @@
   display: none;
 }
 
+.btn-download {
+  border: none;
+  background: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 20px;
+  color: #F18181;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 0;
+  cursor: pointer;
+}
+
 @media (min-width: 500px) {
   .photo-container {
     margin-left: 29%;
@@ -289,7 +308,6 @@
     width: 49%;
     overflow-x: hidden;
     align-self: flex-end;
-
   }
 
   .photo-container {
@@ -354,6 +372,16 @@
     top: 3px;
     right: 10px;
     z-index: -50;
+  }
+
+  .btn-download{
+    margin-top: 15px;
+    position: relative;
+    bottom: 15px;
+    padding: 0;
+  }
+  .btn-download:hover {
+    color: #00009c;
   }
 
 }
@@ -448,25 +476,5 @@
 
 .photo-original {
   display: none;
-}
-
-@include media('print') {
-  .photo-scale-box{
-    display: none;
-  }
-
-  .header-wrapper {
-    position: relative;
-  }
-
-  .photo-original {
-    display: block;
-    position: absolute;
-    width: auto;
-    height: 96%;
-    bottom: 0;
-    left: 50%;
-    transform: translate3d(-50%, 0, 0);
-  }
 }
 

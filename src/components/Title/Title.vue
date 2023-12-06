@@ -56,15 +56,6 @@ const handleScroll = () => {
   }, 1000);
 }
 
-// onMounted(() => {
-//   window.addEventListener('scroll', handleScroll);
-// });
-//
-// // Видаляємо слухач подій при знищенні компонента
-// onBeforeUnmount(() => {
-//   window.removeEventListener('scroll', handleScroll);
-// });
-
 </script>
 
 <style lang="scss" scoped src="./style.scss"></style>

@@ -46,11 +46,12 @@
             <img class="contacts-icon" src="../../assets/icons/group5.png">
             <span class="contacts-text">Kyiv, Ukraine</span>
           </li>
-          <li class="contacts-item">
+          <li class="contacts-item contacts-item__in">
             <span class="contacts-icon contacts-icon__in">in</span>
             <span class="contacts-text"></span>
           </li>
         </ul>
+        <button @click="downloadResume" class="btn-download">Download resume</button>
       </div>
       <kinesis-element
           class="parallax-element img-container__rose-circle"
@@ -181,6 +182,23 @@ const eyebrowClasses = computed(() => {
 function toggleParallax() {
   isParallaxActive.value = !isParallaxActive.value
 }
+
+const downloadResume = () => {
+  // Создаем ссылку на файл
+  const fileUrl = process.env.BASE_URL + 'Resume_Kolgasheva.pdf';
+
+  // Создаем временную ссылку для загрузки файла
+  const link = document.createElement('a');
+  link.href = fileUrl;
+  link.download = 'Resume_Kolgasheva.pdf';
+
+  // Добавляем ссылку в DOM и эмулируем клик для начала загрузки файла
+  document.body.appendChild(link);
+  link.click();
+
+  // Удаляем временную ссылку из DOM
+  document.body.removeChild(link);
+};
 
 const handleMouseMove = () => {
   isEyebrowAnimActive.value = true;
