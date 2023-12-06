@@ -154,6 +154,10 @@ let isEyebrowAnimActive = ref(false)
 const parallaxClasses = computed(() => {
   const classes = ['parallax-wrapper']
 
+  if(isMobile.value) {
+    isParallaxActive.value = false
+  }
+
   if (!isParallaxActive.value) {
     classes.push('disabled')
   }
@@ -171,32 +175,23 @@ const eyebrowClasses = computed(() => {
   if (isEyebrowAnimActive.value) {
     classes.push('init')
   }
-
-
   return classes
 })
-
-
-
 
 function toggleParallax() {
   isParallaxActive.value = !isParallaxActive.value
 }
 
 const downloadResume = () => {
-  // Создаем ссылку на файл
   const fileUrl = process.env.BASE_URL + 'Resume_Kolgasheva.pdf';
 
-  // Создаем временную ссылку для загрузки файла
   const link = document.createElement('a');
   link.href = fileUrl;
   link.download = 'Resume_Kolgasheva.pdf';
 
-  // Добавляем ссылку в DOM и эмулируем клик для начала загрузки файла
   document.body.appendChild(link);
   link.click();
 
-  // Удаляем временную ссылку из DOM
   document.body.removeChild(link);
 };
 
@@ -221,7 +216,11 @@ onMounted(() => {
   }, 1500);
 
   setTimeout(() => {
-    isParallaxActive.value = true
+    if(isMobile.value) {
+      isParallaxActive.value = false
+    } else {
+      isParallaxActive.value = true
+    }
   }, 2000)
 
   window.addEventListener('mousemove', handleMouseMove);
