@@ -1,8 +1,11 @@
 <template>
-  <div class="languages-section">
+  <kinesis-container
+      class="languages-section"
+      event="scroll"
+  >
     <Title class="languages-title" title="LANGUAGES"></Title>
     <p class="languages-item">English: B1</p>
-  </div>
+  </kinesis-container>
 
 </template>
 

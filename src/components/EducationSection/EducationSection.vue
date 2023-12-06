@@ -1,5 +1,8 @@
 <template>
-  <div class="education-section__container">
+  <kinesis-container
+      class="education-section__container"
+      event="scroll"
+  >
     <Title title="Education" class="education-title"></Title>
     <div class="education-section--item">
       <div class="column">
@@ -11,7 +14,7 @@
         <a class="education-section__text education-section__link" href="https://dan-it.com.ua/certificates/frontend/alyona-kolgasheva/">Certificate</a>
       </div>
     </div>
-  </div>
+  </kinesis-container>
 
 </template>
 

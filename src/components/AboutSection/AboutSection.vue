@@ -1,5 +1,8 @@
 <template>
-  <div class="about-section__container">
+  <kinesis-container
+      class="about-section__container"
+      event="scroll"
+  >
     <Title class="about-section__title" title="About me"></Title>
     <p class="about-section__text">I am an aspiring developer with good understanding of React who has completed the
       course and created additionally a game pet-project to prove my skills.</p>
@@ -9,7 +12,7 @@
     <p class="about-section__text"> I'm activle seeking oppotuniteis to apply my determination and analytical thinking.
       Except great salary I am looking for interesting project with handy teammates where I can contribute and improve
       own skills as developer.</p>
-  </div>
+  </kinesis-container>
 </template>
 
 <script>

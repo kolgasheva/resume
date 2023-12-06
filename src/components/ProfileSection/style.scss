@@ -68,7 +68,8 @@
     width: 666px;
     height: 1121px;
     transform-origin: 0 0;
-    transform: scale(.3);
+    transform: scale(.33);
+    image-rendering: smooth;
 
     .image-part {
       background-repeat: no-repeat;
@@ -267,7 +268,7 @@
     max-height: 448px;
 
     .photo-scale-box {
-      transform: scale(.4);
+      transform: scale(.44);
     }
   }
 }
@@ -291,12 +292,12 @@
 
   .photo-container {
     width: 50%;
-    margin-left: 27%;
+    margin-left: 23%;
     position: relative;
     bottom: -23px;
 
     .photo-scale-box {
-      transform: scale(.4);
+      transform: scale(.44);
     }
   }
   .pink-line {

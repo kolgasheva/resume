@@ -12,7 +12,6 @@
 }
 
 .kinesis-container__title {
-  position: relative;
   height: 30px;
   margin-bottom: 20px;
 }
@@ -25,13 +24,18 @@
   color: #305585;
   margin-bottom: 20px;
   text-transform: uppercase;
-  display: inline-block;
   position: absolute;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.title-name {
+  transform: translate3d(0, 2px, 0);
 }
 
 .title--pink {
   color: #FAA79D;
-  display: inline-block;
 }
 
 

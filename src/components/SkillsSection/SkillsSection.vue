@@ -1,5 +1,8 @@
 <template>
-  <div class="skills-section">
+  <kinesis-container
+      class="skills-section"
+      event="scroll"
+  >
     <Title class="skills-title" title="skills"></Title>
     <h4 class="skills-type">Hard skills</h4>
     <ul class="skills-list">
@@ -24,7 +27,7 @@
         <span class="skills-text"> {{skillItem.label}}</span>
       </li>
     </ul>
-  </div>
+  </kinesis-container>
 </template>
 <script>
 

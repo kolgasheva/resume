@@ -1,5 +1,8 @@
 <template>
-  <div class="project-section__container">
+  <kinesis-container
+      class="project-section__container"
+      event="scroll"
+  >
     <Title title="Projects" class="projects-title"></Title>
 
     <div class="projects-item">
@@ -77,7 +80,7 @@
         <a class="project-item__link" href="https://github.com/DoroshenkoDan/Store-Avion">link to github</a>
       </div>
     </div>
-  </div>
+  </kinesis-container>
 </template>
 
 <script>
