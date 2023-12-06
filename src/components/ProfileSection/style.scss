@@ -1,3 +1,5 @@
+
+
 @keyframes initPhotoAnim {
   0% {
     transform: translate3d(0, 100%, 0);
@@ -98,6 +100,10 @@
       animation-name: eyebrowAnim;
       animation-timing-function: cubic-bezier(0.68, -0.6, 0.32, 1.6);
     }
+  }
+
+  .photo-original {
+    display: none;
   }
 }
 
@@ -441,6 +447,20 @@
     .photo-scale-box {
       transform: scale(.6);
     }
+  }
+}
+
+@include media('print') {
+  .photo-scale-box{
+    display: none;
+  }
+
+  .photo-original {
+    display: block;
+    position: absolute;
+    margin-left: 29%;
+    max-height: 672px;
+
   }
 }
 

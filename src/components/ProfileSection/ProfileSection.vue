@@ -26,6 +26,7 @@
             <div class="photo image-part"></div>
             <div :class="eyebrowClasses"></div>
           </div>
+          <img class="photo-original" src="../../assets/photo.png">
         </kinesis-element>
         <img class="parallax-element pink-line" src="../../assets/line1.png">
       </div>
