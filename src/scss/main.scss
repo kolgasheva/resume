@@ -5,3 +5,37 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
+.print-link {
+  .print-box {
+    display: none;
+  }
+
+  .print-link--base-link {
+    white-space: nowrap;
+  }
+
+  .print-link--link {
+    white-space: nowrap;
+  }
+
+  .print-link--qr {
+    width: 100px;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  @include media('print') {
+    .print-box {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .print-link--base-link {
+      display: none;
+    }
+  }
+}

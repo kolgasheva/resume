@@ -5,10 +5,18 @@
   min-width: 333px;
   margin-left: auto;
   margin-right: auto;
+
+  @include media('print') {
+    break-inside: avoid;
+  }
 }
 
 .projects-item{
   margin-bottom: 30px;
+
+  @include media('print') {
+    break-inside: avoid;
+  }
 }
 
 .project-title {
@@ -119,5 +127,26 @@
   .project-item__link{
     font-size: 24px;
     line-height: 33px;
+  }
+}
+
+
+@include media('print') {
+  .projects-title {
+    margin-bottom: 25px;
+  }
+
+  .project-item__img {
+    max-width: 220px;
+  }
+
+  .project-item__img-container--green-circle {
+    max-width: 90px;
+  }
+
+  .project-item__img-container--stars {
+    max-width: 163px;
+    right: unset;
+    left: 160px;
   }
 }

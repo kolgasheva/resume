@@ -20,8 +20,8 @@
         <span class="skills-text"> {{skillItem.label}}</span>
       </li>
     </ul>
+    <h4 class="skills-type">Soft-skills:</h4>
     <ul class="skills-list">
-      <h4 class="skills-type">Soft-skills:</h4>
       <li v-for="(skillItem, index) in softSkills"
           :key="index" class="skills-item">
         <span class="skills-text"> {{skillItem.label}}</span>

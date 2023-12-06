@@ -26,8 +26,8 @@
             <div class="photo image-part"></div>
             <div :class="eyebrowClasses"></div>
           </div>
-          <img class="photo-original" src="../../assets/photo.png">
         </kinesis-element>
+        <img class="photo-original" src="../../assets/photo.png">
         <img class="parallax-element pink-line" src="../../assets/line1.png">
       </div>
       <div class="contact-container">
@@ -135,7 +135,6 @@
         <img class="img-element" src="../../assets/stars.png">
       </kinesis-element>
     </kinesis-container>
-
   </div>
 </template>
 

@@ -3,12 +3,20 @@
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+
+  @include media('print') {
+    break-inside: avoid;
+  }
 }
 
 .education-section--item {
   display: flex;
   flex-wrap: nowrap;
-  gap: 50px
+  gap: 50px;
+
+  @include media('print') {
+    break-inside: avoid;
+  }
 }
 .education-section__text {
   font-weight: 500;

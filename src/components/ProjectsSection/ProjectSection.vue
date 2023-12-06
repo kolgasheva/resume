@@ -56,8 +56,20 @@
         You can look details, code realization on my github and ask me on interview.
       </p>
       <div class="project-item__link-container">
-        <a class="project-item__link" href="http://chartae.morelleth.com/chartae/">link to game</a>
-        <a class="project-item__link" href="https://gitlab.com/alyona4/chartae">link to gitlab</a>
+        <div class="print-link">
+          <a class="print-link--base-link project-item__link" href="http://chartae.morelleth.com/" target="_blank">link to game</a>
+          <div class="print-box">
+            <div class="print-link--link">http://chartae.morelleth.com/</div>
+            <img class="print-link--qr" src="../../assets/chartae-qr.png" />
+          </div>
+        </div>
+        <div class="print-link">
+          <a class="print-link--base-link project-item__link" href="https://gitlab.com/alyona4/chartae" target="_blank">link to gitlab</a>
+          <div class="print-box">
+            <div class="print-link--link">https://gitlab.com/alyona4/chartae</div>
+            <img class="print-link--qr" src="../../assets/chartae-gitlab-qr.png" />
+          </div>
+        </div>
       </div>
     </div>
     <div class="projects-item">

@@ -11,7 +11,13 @@
       <div class="column">
         <p class="education-section__text">DAN.IT EDUCATION</p>
         <p class="education-section__text">React Front-end</p>
-        <a class="education-section__text education-section__link" href="https://dan-it.com.ua/certificates/frontend/alyona-kolgasheva/">Certificate</a>
+        <div class="print-link">
+          <a class="print-link--base-link education-section__text education-section__link" href="https://dan-it.com.ua/certificates/frontend/alyona-kolgasheva/">Certificate</a>
+          <div class="print-box">
+            <div class="print-link--link">https://dan-it.com.ua/certificates/frontend/alyona-kolgasheva/</div>
+            <img class="print-link--qr" src="../../assets/certificate-qr.jpg" />
+          </div>
+        </div>
       </div>
     </div>
   </kinesis-container>
