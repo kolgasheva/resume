@@ -48,7 +48,7 @@
           </li>
           <li class="contacts-item contacts-item__in">
             <span class="contacts-icon contacts-icon__in">in</span>
-            <span class="contacts-text"></span>
+            <a class="contacts-text contacts-link" href="https://www.linkedin.com/in/alyona%2Dkolgasheva/" target="_blank">https://www.linkedin.com/in/alyona-kolgasheva/</a>
           </li>
         </ul>
         <button @click="downloadResume" class="btn-download">Download resume</button>
@@ -183,7 +183,7 @@ function toggleParallax() {
 }
 
 const downloadResume = () => {
-  const fileUrl = process.env.BASE_URL + 'Resume-Kolgasheva.pdf';
+  const fileUrl = process.env.BASE_URL + 'Resume_Kolgasheva.pdf';
 
   const link = document.createElement('a');
   link.href = fileUrl;

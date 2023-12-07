@@ -218,6 +218,13 @@
 
 .contacts-item__in {
   height: 32px;
+
+  display: flex;
+  align-items: center;
+
+  > a {
+    bottom: 0;
+  }
 }
 
 
