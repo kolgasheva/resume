@@ -183,7 +183,7 @@ function toggleParallax() {
 }
 
 const downloadResume = () => {
-  const fileUrl = process.env.BASE_URL + 'Resume_Kolgasheva.pdf';
+  const fileUrl = process.env.BASE_URL + 'Resume-Kolgasheva.pdf';
 
   const link = document.createElement('a');
   link.href = fileUrl;

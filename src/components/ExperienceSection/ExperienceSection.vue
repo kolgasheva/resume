@@ -22,6 +22,7 @@
         <li class="project-item task-item">&#8226; Experience with HTML5 and SCSS;</li>
         <li class="project-item task-item">&#8226; Setting up project with the Gulp builder and npm package manager.</li>
       </ul>
+
     </div>
   </kinesis-container>
 
