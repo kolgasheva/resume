@@ -1,8 +1,6 @@
 .experience-section__container {
-  margin-top: 30px;
   width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 30px auto 30px auto;
 }
 
 .experience-item__title {
@@ -22,12 +20,16 @@
   margin-bottom: 15px;
 }
 
-.task-item {
+.project-item {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: #1D1B1B;
   margin-bottom: 10px;
+}
+
+.task-item{
+  margin-bottom: 5px;
 }
 
 
@@ -43,6 +45,9 @@
 }
 
 @media (min-width: 992px) {
+  .experience-section__container{
+    margin-bottom: 45px;
+  }
   .experience-item__title {
     font-width: 800;
     font-size: 30px;
@@ -63,10 +68,13 @@
     line-height: 33px;
   }
 
-  .task-item {
+  .project-item {
     font-size: 18px;
     line-height: 25px;
     margin-bottom: 15px;
+  }
+  .task-item{
+    margin-bottom: 5px;
   }
 
 }
