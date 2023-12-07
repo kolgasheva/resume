@@ -80,7 +80,7 @@
         implementation of our project.
       </p>
       <div class="project-item__link-container">
-        <a class="project-item__link" href="https://shop-avion.onrender.com/" target="_blank">link to game</a>
+        <a class="project-item__link" href="https://shop-avion.onrender.com/" target="_blank">link to project</a>
         <a class="project-item__link" href="https://github.com/DoroshenkoDan/Store-Avion" target="_blank">link to github</a>
       </div>
     </div>
